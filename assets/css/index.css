@@ -1,0 +1,40 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: cursive;
+}
+
+#title {
+	font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+    color: blue;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+h1 {
+	margin: 0 auto;
+    text-align: center;
+}
+
+#navBar {
+	margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.navLinks {
+	display: inline-flex;
+    border: solid 5px deepskyblue;
+    border-radius: 5px;
+    border-width: 5px;
+    text-decoration: none;
+    background-color: deepskyblue;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.navLinks a {
+	text-decoration: none;
+}
