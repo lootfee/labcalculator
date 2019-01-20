@@ -11,9 +11,7 @@
 }
 
 .sidelink input[name="calculations"] {
-  /*left: -9999px;*/
   position: absolute;
-  /*top: -9999px;*/
   visibility: hidden;
 }
 
@@ -39,7 +37,7 @@
   display: none;
   left: 300px;
   min-width: 300px;
-  padding: 15px 15px 15px 21px;
+  padding: 5px 15px 15px 21px;
   position: fixed;  
   top: 200px;
 }
@@ -65,18 +63,33 @@
   display: block;
 }
 
+form {
+	height: 100%;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
 
 table, th, td {
    border: 1px solid black;
 }
 
 .inputLabel {
-	width: 150px;
+	width: 230px;
 	color: #000;
 	font-weight: bold;
 }
 
-.inputData {
+input, output{
+	max-width: 160px;
+	color: blue;
+	font-weight: bold;
+}
+
+/*.inputData {
 	max-width: 160px;
 	color: blue;
 	font-weight: bold;
@@ -86,7 +99,7 @@ table, th, td {
 	width: 150px;
 	color: blue;
 	font-weight: bold;
-}
+}*/
 
 .tableLabel {
   background: inherit;
@@ -105,42 +118,20 @@ table, th, td {
 	width: 80px;
 }
 
-#lipidProfileTable {
+.tableContainer {
   border-collapse: collapse;
   
 }
 
-#lipidProfileTable td {
-    border: 1px solid #ddd;
-    padding: 3px;
-}
-#lipidProfileTable tr:hover {background-color: #ddd;}
-#lipidProfileTable tr:nth-child(even){background-color: #a9ecac;}
-#lipidProfileTable tr:nth-child(odd){background-color: #84d087;}
-#lipidProfileTable th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
-
-.egfrTable {
-  border-collapse: collapse;
-  
-}
-
-.egfrTable td {
+.tableContainer td {
   border: 1px solid #ddd;
   padding: 1px;
 }
 
-
-
-.egfrTable tr:hover {background-color: #ddd;}
-.egfrTable tr:nth-child(even){background-color: #a9ecac;}
-.egfrTable tr:nth-child(odd){background-color: #84d087;}
-.egfrTable th {
+.tableContainer tr:hover {background-color: #ddd;}
+.tableContainer tr:nth-child(even){background-color: #a9ecac;}
+.tableContainer tr:nth-child(odd){background-color: #84d087;}
+.tableContainer th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -148,64 +139,23 @@ table, th, td {
     color: white;
 }  
 
-.egfrTable input[name="egfradgen"] {
-  /*left: -9999px;*/
-  position: absolute;
-  /*top: -9999px;*/
-   visibility: hidden;
+.inputRadio {
+	position: absolute;
+	visibility: hidden;
 }
 
-.egfrTable input[name="egfradrace"] {
-  /*left: -9999px;*/
-  position: absolute;
-  /*top: -9999px;*/
-  visibility: hidden;
+.inputRadio:checked + label {
+	background: #275929;
+	color: white;
+	border: 0px;
 }
 
-.egfrTable input[name="egfradgen"]:checked + label { 
-  background: #275929;
-  color: white;
-  border: 0px;
+.inputRadio:checked + form {
+	display: block;
 }
 
-.egfrTable input[name="egfradrace"]:checked + label { 
-  background: #275929;
-  color: white;
-  border: 0px;
-}
-
-.egfrTable input[name="egfradgen"]:checked ~ form {
-  display: block;
-  
-}
-
-.egfrTable input[name="egfradgenp"] {
-  /*left: -9999px;*/
-  position: absolute;
-  /*top: -9999px;*/
-  visibility: hidden;
-}
-
-.egfrTable input[name="egfradh"] {
-  /*left: -9999px;*/
-  position: absolute;
-  /*top: -9999px;*/
-  visibility: hidden;
-}
-
-.egfrTable input[name="egfradgenp"]:checked + label { 
-  background: #275929;
-  color: white;
-  border: 0px;
-}
-
-.egfrTable input[name="egfradh"]:checked + label { 
-  background: #275929;
-  color: white;
-  border: 0px;
-}
-
-.egfrTable input[name="egfradgenp"]:checked ~ form {
-  display: block;
+#creaCleartable {
+  border-collapse: collapse;
+  width: 100%;
   
 }

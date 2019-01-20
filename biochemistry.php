@@ -16,8 +16,8 @@
 			
 			<div id="lipidProfileContainer" class="sidelink">
 				
-				<?php include 'includes/biochemistry_sections/lipidProfile.php'?>
-			
+					<?php include 'includes/biochemistry_sections/lipidProfile.php'?>
+				
 			</div>
 			
 			<div id="egfrContainer" class="sidelink">
@@ -30,6 +30,12 @@
 				
 				<?php include 'includes/biochemistry_sections/24hrUchem.php'?>
 			
+			</div>
+			
+			<div id="creatinineClearance" class="sidelink">
+				
+					<?php include 'includes/biochemistry_sections/creatinineClearance.php'?>
+				
 			</div>
 		
 		</div>

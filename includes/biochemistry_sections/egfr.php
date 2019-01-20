@@ -11,30 +11,30 @@
 <label for="egfrRadio" class="sidelinkLabel">eGFR</label>
 	<form id="egfrForm">
 		<div id="egfrAdult">
-			  <table id="egfrAdultTable" class="egfrTable">
-				<h2>ADULT</h2>
-				<tr>
-				  <td align="left" class="inputLabel">Serum Creatinine:&nbsp;</td>
-				  <td align="center" colspan="2"><input type="text" class="inputData" name="screa3" id="screa3"></td>
-				</tr>
-				<tr>
-				  <td align="left" class="inputLabel">Age:&nbsp;</td>
-				  <td align="center" colspan="2"><input type="text" class="inputData" name="age" id="age"></td>
-				</tr>
-				<tr>
-				  <td align="left" class="inputLabel">Gender:&nbsp;</td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradgen" id="genm"><label for="genm" class="tableLabel">Male</label></td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradgen" id="genf"><label for="genf" class="tableLabel">Female</label></td>
-				</tr>
-				<tr>
-				  <td align="left" class="inputLabel">Race:&nbsp;</td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradrace" id="raceb"><label for="raceb" class="tableLabel">Black</label></td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradrace" id="raceo"><label for="raceo" class="tableLabel">Others</label></td>
-				</tr>
-				<tr>
-				  <td align="left">eGFR (mL/min/1.73m<sup>2</sup>):&nbsp;</td>
-				  <td align="center" colspan="2"><output type="text" class="outputData" name="egfr" id="egfr"></td>
-				</tr>
+			  <table id="egfrAdultTable" class="tableContainer">
+					<h2>ADULT</h2>
+					<tr>
+					  <td align="left" class="inputLabel">Serum Creatinine:&nbsp;</td>
+					  <td align="center" colspan="2"><input type="text" class="inputData" name="screa3" id="screa3"></td>
+					</tr>
+					<tr>
+					  <td align="left" class="inputLabel">Age:&nbsp;</td>
+					  <td align="center" colspan="2"><input type="text" class="inputData" name="age" id="age"></td>
+					</tr>
+					<tr>
+					  <td align="left" class="inputLabel">Gender:&nbsp;</td>
+					  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradgen" id="genm"><label for="genm" class="tableLabel">Male</label></td>
+					  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradgen" id="genf"><label for="genf" class="tableLabel">Female</label></td>
+					</tr>
+					<tr>
+					  <td align="left" class="inputLabel">Race:&nbsp;</td>
+					  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradrace" id="raceb"><label for="raceb" class="tableLabel">Black</label></td>
+					  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradrace" id="raceo"><label for="raceo" class="tableLabel">Others</label></td>
+					</tr>
+					<tr>
+					  <td align="left">eGFR (mL/min/1.73m<sup>2</sup>):&nbsp;</td>
+					  <td align="center" colspan="2"><output type="text" class="outputData" name="egfr" id="egfr"></td>
+					</tr>
 			  </table>
 				  <input type="button" class="button" value="CALCULATE" onclick="calcegfr()"></input>
 				  <input type="button" class="button" value="Reset" onclick="resetegfr()"></input>
@@ -44,7 +44,7 @@
 		</div>
 		
 		<div id="egfrPedia">
-			<table id="egfrPediatricTable" class="egfrTable">
+			<table id="egfrPediatricTable" class="tableContainer">
 				<h2>PEDIATRIC</h2>
 				<tr>
 				  <td align="left" class="inputLabel">Serum Creatinine:&nbsp;</td>
@@ -56,16 +56,16 @@
 				</tr>
 				<tr>
 				  <td align="left" class="inputLabel">Gender:&nbsp;</td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradgenp" id="genmp"><label for="genmp" class="tableLabel">Male</label></td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradgenp" id="genfp"><label for="genfp" class="tableLabel">Female</label></td>
+				  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradgenp" id="genmp"><label for="genmp" class="tableLabel">Male</label></td>
+				  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradgenp" id="genfp"><label for="genfp" class="tableLabel">Female</label></td>
 				</tr>
 				<tr>
 				  <td align="left" class="inputLabel" rowspan="2">Height:&nbsp;</td>
 				  <td align="center" colspan="2"><input type="text" class="inputData" name="height" id="height"></td>
 				</tr>
 				<tr>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradh" id="hcm"><label for="hcm" class="tableLabel">Centimeters</label></td>
-				  <td align="center" class="radioCell"><input type="radio" name="egfradh" id="hmet"><label for="hmet" class="tableLabel">Meters</label></td>
+				  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradh" id="hcm"><label for="hcm" class="tableLabel">Centimeters</label></td>
+				  <td align="center" class="radioCell"><input class="inputRadio" type="radio" name="egfradh" id="hmet"><label for="hmet" class="tableLabel">Meters</label></td>
 				</tr>
 				<tr>
 				  <td align="left" class="inputLabel">eGFR (mL/min/1.73m<sup>2</sup>):&nbsp;</td>
